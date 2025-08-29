@@ -1,12 +1,14 @@
 import requests
 import os
+import csv
 from dotenv import load_dotenv
 
 load_dotenv()
 
-api_key = os.getenv("YOUTUBE_API_KEY") 
+API_KEY = os.getenv("YOUTUBE_API_KEY") 
 
-if api_key:
-    print("api_key loaded successfully")
+if API_KEY:
+    print("key loaded successfully")
 else:
-    print("api key did not load successfully")
+    print("key did not load successfully")
+
